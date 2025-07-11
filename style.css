@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+  background-color: #f8ebd7;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #f8ebd7;
+  font-size: 20pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+#logo a {
+  font-family: "Luckiest Guy", cursive;
+}
+
+nav a {
+  color: #4e342e;
+  text-decoration: none;
+}
+
+nav button {
+  cursor: pointer;
+  border: solid 3px #4e342e;
+  background-color: #4e342e;
+  color: #f8ebd7;
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 20pt;
+  transition: 0.25s;
+}
+
+nav button:hover {
+  background-color: #f8ebd7;
+  color: #4e342e;
+}
+
+/* MAIN */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+main img {
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 400px;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.25));
+}
+
+main p {
+  font-family: "Georgia", serif;
+  font-size: 20pt;
+  text-align: center;
+}
+
+main button {
+  cursor: pointer;
+  border: solid 3px #4e342e;
+  background-color: #4e342e;
+  color: #f8ebd7;
+  padding: 5px 20px;
+  border-radius: 15px;
+  font-size: 20pt;
+  transition: 0.25s;
+  margin-top: 20px;
+}
+
+main button:hover {
+  background-color: #f8ebd7;
+  color: #4e342e;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 200px;
+  padding: 0px 5px;
+}
+
+.flavors:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.flavors img {
+  position: absolute;
+  width: 240px;
+  z-index: 100;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.5));
+}
+
+.desc {
+  position: absolute;
+  top: 180px; 
+  background-color: #4e342e;
+  color: white;
+  padding: 20px 40px;
+  padding-top: 80px;
+  border-radius: 30px;
+  width: 400px;
+  height: 320px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.flavors {
+  position: relative;
+  width: 250px;
+  height: 350px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#title {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+#description {
+  font-family: "Inter", sans-serif;
+  font-size: 12pt;
+  margin-bottom: 15px;
+}
+
+#price {
+  font-family: "Inter", sans-serif;
+  background-color: #f8ebd7;
+  width: 100px;
+  color: #4e342e;
+  border-radius: 20px;
+  padding: 6px 14px;
+  display: inline-block;
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50pt;
+  color: #4e342e;
+  letter-spacing: 3px;
+  margin: 100px 0;
+}
