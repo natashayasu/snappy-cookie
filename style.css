@@ -33,7 +33,9 @@ nav ul {
 
 #logo img {
   display: block;
-  width: 80px;
+  max-width: 80px;
+  width: auto;
+  height: auto;
 }
 
 #bars {

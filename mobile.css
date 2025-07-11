@@ -40,3 +40,51 @@
         font-size: 35pt;
     }
 }
+
+@media (max-width: 400px) {
+
+    main img {
+        width: 300px;
+    }
+
+    main p {
+        font-size: 16pt;
+    }
+
+    main button {
+        margin-top: 40px;
+    }
+
+    h1{
+        font-size: 25pt;
+    }
+    .flavors img {
+        width: 200px;
+    }
+
+    .content {
+        gap: 120px;
+    }
+
+    .desc {
+        top: 150px; 
+        padding: 20px 40px;
+        padding-top: 60px;
+        width: 300px;
+        height: 270px;
+        gap: 10px;
+    }
+
+    #title {
+        font-size: 18pt;
+    }
+
+    #description {
+        font-size: 10pt;
+    }
+
+    #price {
+        font-size: 12pt;
+        margin-bottom: 10px;
+    }
+}
