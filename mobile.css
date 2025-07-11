@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+  
+    nav{
+        padding: 1rem 2rem;
+    }
+    nav a {
+        font-size: 20pt;
+    }
+    nav #logo img {
+        width: 70px;
+    }
+    nav button {    
+        font-size: 18pt;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    nav ul, nav button {
+        display: none;
+    }
+    nav #bars {
+        display: block;
+    }
+
+    main {
+        padding: 0 6rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+  
+    main {
+        padding: 0 1.5rem;
+    }
+
+    h1 {
+        font-size: 35pt;
+    }
+}
